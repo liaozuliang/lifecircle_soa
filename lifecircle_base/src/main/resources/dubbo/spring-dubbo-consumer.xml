@@ -7,6 +7,18 @@
 	http://code.alibabatech.com/schema/dubbo
     http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
 
-    <!--<dubbo:reference interface="com.idianyou.lifecircle.service.MyTestDubboService" id="myTestDubboService111" check="false"></dubbo:reference>-->
+    <dubbo:reference interface="com.idianyou.miniapps.spi.service.MiniappsInfoDubboService" id="miniappsInfoDubboService" check="false"></dubbo:reference>
 
+    <dubbo:reference interface="com.idianyou.circle.service.dubbo.GroupChatWonderfulMomentDubboService" id="groupChatWonderfulMomentDubboService" check="false"></dubbo:reference>
+
+    <dubbo:reference interface="com.idianyou.im.limit.service.ImLimitService" id="imLimitService" check="false"></dubbo:reference>
+    <dubbo:reference interface="com.idianyou.business.usercenter.service.UserCenterService" id="userCenterService" check="false"></dubbo:reference>
+    <dubbo:reference interface="com.idianyou.startcompany.spi.service.CompanyInfoService" id="companyInfoService" check="false"></dubbo:reference>
+    <dubbo:reference interface="com.idianyou.cipher.spi.service.RedPackLifecircleService" id="redPackLifecircleService" check="false"></dubbo:reference>
+    <dubbo:reference interface="com.idianyou.cglive.service.CgliveRoomService" id="cgliveRoomService" check="false"></dubbo:reference>
+    <dubbo:reference interface="com.idianyou.imredpacket.spi.service.QuestionMomentService" id="questionMomentService" check="false"></dubbo:reference>
+    <dubbo:reference interface="com.idianyou.market.spi.service.FarmerDubboService" id="farmerDubboService" check="false"></dubbo:reference>
+    <dubbo:reference interface="com.platform.spi.service.PlatformService" id="platformService" check="false"></dubbo:reference>
+
+    <dubbo:reference interface="com.idianyou.lifecircle.pool.operate.service.UserPoolService" id="userPoolService" check="false"></dubbo:reference>
 </beans>

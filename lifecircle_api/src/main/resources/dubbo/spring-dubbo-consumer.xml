@@ -7,6 +7,12 @@
 	http://code.alibabatech.com/schema/dubbo
     http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
 
-    <!--<dubbo:reference interface="com.idianyou.lifecircle.service.MyTestDubboService" id="myTestDubboService111" check="false"></dubbo:reference>-->
+    <!--<dubbo:reference interface="com.idianyou.business.cpa.service.SysUcenterUserMainService" id="sysUcenterUserMainService" check="false"></dubbo:reference>-->
+    <dubbo:reference interface="com.chigua.session.spi.service.SessionService" id="sessionService" check="false"></dubbo:reference>
+
+    <dubbo:reference interface="com.idianyou.lifecircle.service.LifeCircleChannelDubboService" id="lifeCircleChannelDubboService" check="false"></dubbo:reference>
+    <dubbo:reference interface="com.idianyou.lifecircle.service.LifeCircleContentPublishDubboService" id="lifeCircleContentPublishDubboService" check="false"></dubbo:reference>
+    <dubbo:reference interface="com.idianyou.lifecircle.service.AppListDubboService" id="appListDubboService" check="false"></dubbo:reference>
+    <dubbo:reference interface="com.idianyou.lifecircle.service.QuestionRedpacketDubboService" id="questionRedpacketDubboService" check="false"></dubbo:reference>
 
 </beans>

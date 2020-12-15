@@ -11,10 +11,10 @@ import lombok.Data;
 @Data
 public class LifeCircleException extends RuntimeException {
 
-    private Integer errorCode;
+    private String errorCode;
     private String errorMessage;
 
-    public LifeCircleException(Integer errorCode, String errorMessage) {
+    public LifeCircleException(String errorCode, String errorMessage) {
         super(errorCode + ":" + errorMessage);
         this.errorCode = errorCode;
         this.errorMessage = errorMessage;
@@ -25,6 +25,8 @@ public class LifeCircleException extends RuntimeException {
 
     public LifeCircleException(String message) {
         super(message);
+        this.errorCode = "501";
+        this.errorMessage = message;
     }
 
     public LifeCircleException(String message, Throwable cause) {

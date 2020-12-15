@@ -1,0 +1,81 @@
+=========================生活商品商铺=================
+PUT life_shops_goods_20201214
+{
+    "mappings": {
+      "content": {
+        "properties": {
+          "area": {
+            "type": "nested",
+            "properties": {
+              "areaCode": {
+                "type": "keyword"
+              },
+              "cityCode": {
+                "type": "keyword"
+              },
+              "provinceCode": {
+                "type": "keyword"
+              },
+              "streetCode": {
+                "type": "keyword"
+              },
+              "townshipCode": {
+                "type": "keyword"
+              }
+            }
+          },
+          "createTime": {
+            "type": "date"
+          },
+          "dataId": {
+            "type": "integer"
+          },
+          "dataType": {
+            "type": "integer"
+          },
+          "id": {
+            "type": "keyword"
+          },
+          "location": {
+            "type": "geo_point"
+          },
+          "monthSales": {
+            "type": "integer"
+          },
+          "name": {
+            "type": "text",
+            "fields": {
+              "ik": {
+                "type": "text",
+                "analyzer": "ik_max_word"
+              }
+            }
+          },
+          "onOffStatus": {
+            "type": "integer"
+          },
+          "status": {
+            "type": "integer"
+          },
+          "updateTime": {
+            "type": "date"
+          },
+          "weight": {
+            "type": "double"
+          }
+        }
+      }
+    }
+}
+
+POST /_aliases
+{
+  "actions": [
+    {
+      "add": {
+        "index": "life_shops_goods_20201214",
+        "alias": "life_shops_goods"
+      }
+    }
+  ]
+}

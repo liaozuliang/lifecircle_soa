@@ -17,8 +17,7 @@
     <dubbo:protocol name="${dubbo.protocol.name}" port="${dubbo.protocol.port}" />
  	
  	<import resource="spring-dubbo-consumer.xml"/>
-	<import resource="spring-dubbo-provider.xml"/>
-   
+
    	<!-- delay 延迟暴露机制   timeout 超时时间  accepts 服务提供方最大可接受连接数   retries 重试次数 -->
    	<dubbo:provider delay="-1" timeout="6000" accepts="2000" threadpool="cached" threads="800" retries="0"/>
 
